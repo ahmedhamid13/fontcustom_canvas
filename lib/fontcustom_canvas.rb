@@ -11,21 +11,18 @@ module FontcustomCanvas
 
   files.each do |file|
     File.write("app/jsx/theme_editor/#{file}", (URI.parse("#{uri_content}/theme_editor/#{file}").open.read) )
-    puts "app/jsx/theme_editor/#{file} --->> done"
+    # puts "app/jsx/theme_editor/#{file} --->> done"
   end 
 
   File.write("app/stylesheets/base/_variables.scss", (URI.parse("#{uri_content}/_variables.scss").open.read) )
-  puts "app/stylesheets/base/_variables.scss --->> done"
-
-  File.write("app/stylesheets/base/_ic_app_header.scss", (URI.parse("#{uri_content}/_ic_app_header.scss").open.read) )
-  puts "app/stylesheets/base/_ic_app_header.scss --->> done"
+  # puts "app/stylesheets/base/_variables.scss --->> done"
 
   File.write("app/stylesheets/components/_ic-typography.scss", (URI.parse("#{uri_content}/_ic-typography.scss").open.read) )
-  puts "app/stylesheets/components/_ic-typography.scss --->> done"
+  # puts "app/stylesheets/components/_ic-typography.scss --->> done"
 
   File.write("app/stylesheets/brandable_variables.json", (URI.parse("#{uri_content}/brandable_variables.json").open.read) )
-  puts "app/stylesheets/brandable_variables.json --->> done"
+  # puts "app/stylesheets/brandable_variables.json --->> done"
 
   File.write("lib/brandable_css.rb", (URI.parse("#{uri_content}/brandable_css.rb").open.read) )
-  puts "lib/brandable_css.rb --->> done"
+  # puts "lib/brandable_css.rb --->> done"
 end
