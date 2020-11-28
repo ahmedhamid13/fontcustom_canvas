@@ -1,6 +1,7 @@
 require_relative 'lib/fontcustom_canvas/version'
 
 Gem::Specification.new do |spec|
+  spec.add_dependency 'bootstrap', ['~> 4.5.3']
   spec.name          = "fontcustom_canvas"
   spec.version       = FontcustomCanvas::VERSION
   spec.authors       = ["ahmed-abd-elhamid"]

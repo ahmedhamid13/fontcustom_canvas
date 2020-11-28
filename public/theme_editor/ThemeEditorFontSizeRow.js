@@ -131,7 +131,8 @@ export class ThemeEditorFontSizeRow extends Component {
               <hr />
               <div className="Theme__editor-fontSize-block border p-2">
                 {this.textFontSizeInput()}
-                {this.warningLabel()}
+                {this.warningLabel()}\
+                <br />
                 <small>Hint: Valid from 5 till 72 size!</small>
                 <p
                   className="Theme__editor-fontSize-label Theme__editor-fontSize-block_label-sample border text-center shadow"

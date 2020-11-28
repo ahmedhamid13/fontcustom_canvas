@@ -17,6 +17,9 @@ module FontcustomCanvas
   File.write("app/stylesheets/base/_variables.scss", (URI.parse("#{uri_content}/_variables.scss").open.read) )
   puts "app/stylesheets/base/_variables.scss --->> done"
 
+  File.write("app/stylesheets/base/_ic_app_header.scss", (URI.parse("#{uri_content}/_ic_app_header.scss").open.read) )
+  puts "app/stylesheets/base/_ic_app_header.scss --->> done"
+
   File.write("app/stylesheets/components/_ic-typography.scss", (URI.parse("#{uri_content}/_ic-typography.scss").open.read) )
   puts "app/stylesheets/components/_ic-typography.scss --->> done"
 
