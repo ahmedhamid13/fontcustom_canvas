@@ -23,6 +23,8 @@ After That compile assets of canvas:
 
     $ bundle exec rails canvas:compile_assets
 
+If the the previous command did'nt success, you will asked to move the last two migration files to create new migration files.. So the command that will appear at aborting.. then run previous command again.
+
 ## Usage
 
 To add Font customization options in canvas-lms, and added it to Theme Editor.
